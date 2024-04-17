@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Similarity Calculator</title>
+</head>
+<body>
+    <h2>Text Similarity Calculator</h2>
+    <form action="/calculate_similarity" method="Post">
+        <label for="text1">Text 1:</label><br>
+        <input type="text" id="text1" name="text1"><br><br>
+        <label for="text2">Text 2:</label><br>
+        <input type="text" id="text2" name="text2"><br><br>
+        <input type="submit" value="Calculate Similarity">
+    </form>
+
+    <p>The average similarity score between the two texts is: {{ similarity_score }}</p>
+    
+</body>
+</html>
